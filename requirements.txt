@@ -5,5 +5,7 @@ matplotlib
 scikit-learn
 requests
 flask
--e .
+catboost
+Xgboost
+#-e .
 # for triggering setup.py 
