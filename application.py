@@ -5,13 +5,12 @@ import pickle
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict__pipeline import CustomData, PredictPipeline  
 application=Flask(__name__)
-app=application
 #route for home page
-@app.route('/')
+@application.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/predictdata',methods=['GET','POST'])
+@application.route('/predictdata',methods=['GET','POST'])
 def predict_datapoint():
     if request.method=='GET':
         return render_template('home.html')
@@ -32,7 +31,7 @@ def predict_datapoint():
         return render_template('home.html',results=results[0])  
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0")
+    application.run(host="0.0.0.0")
     #MAP IT TO 127.0.0.1
     #BY DEFAULT FLASK RUNS ON 5000 PORT
 
