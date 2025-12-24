@@ -1,12 +1,6 @@
 pandas
 numpy
-seaborn
-matplotlib
 scikit-learn
 requests
 flask
-catboost
-Xgboost
-dill
-#-e .
-# for triggering setup.py 
+gunicorn
