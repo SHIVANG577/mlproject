@@ -6,6 +6,4 @@ scikit-learn
 requests
 flask
 gunicorn
-catboost
-xgboost
 dill
