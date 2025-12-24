@@ -1,6 +1,11 @@
 pandas
 numpy
+seaborn
+matplotlib
 scikit-learn
 requests
 flask
 gunicorn
+catboost
+xgboost
+dill
